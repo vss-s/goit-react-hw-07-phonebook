@@ -1,0 +1,51 @@
+.container {
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 15px 0;
+  box-shadow: 0 0 2px;
+  border-radius: 5px;
+}
+
+.inputLabel,
+.inputField {
+  margin-bottom: 10px;
+}
+
+.inputLabel {
+  font-size: 20px;
+}
+
+.inputField {
+  width: 50%;
+  border-radius: 5px;
+  border: 2px solid transparent;
+  font-size: 25px;
+  box-shadow: 0 0 3px;
+  text-align: center;
+}
+
+.inputFieldError {
+  composes: inputField;
+  border: 2px solid red;
+}
+
+.invalidMessage {
+  background-color: red;
+  color: white;
+  padding: 2px 5px;
+  border-radius: 5px;
+  min-width: 150px;
+}
+
+.Btn {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  transition: transform 0.3s linear;
+}
+
+.Btn:hover {
+  transform: scale(1.2);
+}
